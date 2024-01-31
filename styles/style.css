@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+.header {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  padding: 5px 20px;
+}
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--header-height);
+}
+.header .nav_logo {
+  color: var(--first-color);
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+}
+.header .nav_list {
+  text-align: center;
+  display: flex;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.header .nav_link {
+  color: var(--white-color);
+  font-weight: var(--font-medium);
+  transition: color 0.4s;
+}
+.header .nav_link:hover {
+  color: var(--first-color);
+}
+
+.home_container {
+  display: flex;
+  padding: 7rem 1rem;
+  position: relative;
+  row-gap: 40px;
+}
+.home_content {
+  position: relative;
+  display: grid;
+  justify-self: center;
+}
+.home_img {
+  width: 220px;
+}
+.home_title {
+  font-size: var(--biggest-font-size);
+  color: var(--first-color);
+  position: absolute;
+  display: flex;
+  -moz-column-gap: 7px;
+       column-gap: 7px;
+  top: -32px;
+  justify-self: center;
+}
+.home_title span:nth-child(2) {
+  z-index: -1;
+}
+.home_tooltip {
+  position: absolute;
+  top: -8px;
+  right: 24px;
+}
+.home_tooltip-img {
+  width: 60px;
+}
+.home_tooltip-text {
+  position: absolute;
+  background: var(--gradient-color);
+  color: var(--white-color);
+  font-weight: var(--font-medium);
+  padding: 6px 12px;
+  border-radius: 64px;
+  font-size: var(--small-font-size);
+  transform: translate(60px, -40px);
+  white-space: nowrap;
+}
+.home_social {
+  display: grid;
+  justify-content: center;
+  row-gap: 96px;
+  position: absolute;
+  top: 140px;
+  left: -24px;
+}
+.home_social-text {
+  position: relative;
+  rotate: 90deg;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+}
+.home_social-text::after {
+  content: "";
+  width: 48px;
+  height: 1px;
+  background-color: var(--text-color);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -64px;
+  margin: auto;
+}
+.home_social-links {
+  display: grid;
+  row-gap: 12px;
+  margin-left: 22px;
+}
+.home_social-link {
+  color: var(--text-color);
+  font-size: 20px;
+  transition: color 0.4s;
+}
+.home_social-link:hover {
+  color: var(--first-color);
+}
+.home_button {
+  justify-self: center;
+}
+
+.button {
+  background: var(--gradient-color);
+  padding: 12px;
+  color: white;
+  border-radius: 64px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  font-weight: var(--font-semi-bold);
+  transition: box-shadow 0.4s;
+}
+.button i {
+  color: var(--first-color);
+  font-size: 32px;
+}
+.button:hover {
+  box-shadow: 0 12px 32px hsla(23, 100%, 50%, 0.12);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --header-height: 3.5rem;
+  --first-color: hsl(23, 100%, 50%);
+  --gradient-color: linear-gradient(
+    90deg,
+    hsl(23, 4%, 28%) 0%,
+    hsl(23, 4%, 8%) 100%
+  );
+  --white-color: hsl(0, 0%, 100%);
+  --text-color: hsl(23, 4%, 60%);
+  --body-color: hsl(23, 12%, 4%);
+  --container-color: hsl(23, 4%, 10%);
+  --body-font: "Poppins", sans-serif;
+  --biggest-font-size: 10rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  /* z-index */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+}
+
+h1, h2, h3, h4 {
+  color: var(--white-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding-block: 5rem 1rem;
+}/*# sourceMappingURL=style.css.map */
