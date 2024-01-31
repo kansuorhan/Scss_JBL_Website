@@ -2,7 +2,9 @@
 @import "header";
 @import "home";
 @import "button";
-
+@import "about";
+@import "favorite";
+@import "model";
 
 *{
   margin: 0;
@@ -77,4 +79,10 @@ img {
 
 .section {
   padding-block: 5rem 1rem;
+}
+
+.section_title {
+  text-align: center;
+  font-size: var(--h2-font-size);
+  margin-bottom: 24px;
 }

@@ -1,0 +1,22 @@
+.model {
+  &_container {
+    padding-top: 32px;
+  }
+
+  &_content {
+    position: relative;
+    justify-self: center;
+  }
+
+  &_img {
+    width: 280px;
+  }
+
+  &_tooltip {
+    position: absolute;
+
+    &-text {
+      background: var(--gradient-color);
+    }
+  }
+}
