@@ -1,0 +1,157 @@
+@media screen and (max-width: 340px) {
+  .container {
+    margin-inline: 1rem;
+  }
+
+  .home {
+    &_img {
+      width: 180px;
+    }
+
+    &_title {
+      font-size: 8rem;
+    }
+  }
+
+  .model_tooltip-1 .model_tooltip-text,
+  .model_tooltip-2 .model_tooltip-text {
+    transform: translate(40px, -40px);
+  }
+
+  .sponsor {
+    margin-left: 20px;
+  }
+
+  .footer {
+    &_form {
+      button {
+        width: 130px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .about {
+    &_container {
+      grid-template-columns: 380px;
+      justify-content: center;
+    }
+  }
+
+  .footer {
+    &_data {
+      grid-template-columns: repeat(3, max-content);
+      column-gap: 48px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home {
+
+    &_img {
+    width: 320px;
+    }
+
+    &_title {
+      font-size: 256px;
+      top: -64px;
+    }
+
+    &_social {
+      top: 0;
+      bottom: 0;
+      align-content: center;
+    }
+  }
+
+  .sponsor_container {
+    grid-template-columns: repeat(4,max-content);
+  }
+
+  .footer_container {
+    justify-content: space-between;
+  }
+
+  .footer_data {
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 20px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .container {
+    margin-inline: auto;
+  }
+
+  .section {
+    padding-block: 128px 32px;
+  }
+
+  .sectiona_title {
+    font-size: var(--h1-font-size);
+  }
+
+  .home_img {
+    width: 500px;
+  }
+
+  .home_title {
+    font-size: 25rem;
+    top: -8px;
+    column-gap: 16px;
+  }
+
+  .home_tooltip-img {
+    width: initial;
+  }
+
+  .home_tooltip-text {
+    font-size: var(--normal-font-size);
+    transform: translate(82px, -52px);
+  }
+
+  .home_social-text {
+    font-size: var(--normal-font-size);
+  }
+
+  .home_social-links {
+    row-gap: 16px;
+  }
+
+  .home_social-link {
+    font-size: 24px;
+  }
+
+  .about_container {
+    grid-template-columns: 400px 500px;
+  }
+  .about_data .section_title,
+  .about_data {
+    text-align: initial;
+  }
+  .about_img {
+    width: 500px;
+  }
+  .model_img {
+    width: 600px;
+  }
+  .model_tooltip-img {
+    width: initial;
+  }
+  .model_tooltip-text {
+    font-size: var(--normal-font-size);
+    padding: 8px 20px;
+    transform: translate(82px, -56px);
+  }
+  .model_tooltip-1 {
+    top: 160px;
+    left: 13rem;
+  }
+  .model_tooltip-3 {
+    bottom: 6rem;
+    right: 120px;
+  }
+  
+}

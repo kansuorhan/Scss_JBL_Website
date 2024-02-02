@@ -46,3 +46,18 @@
   left: 0;
   z-index: -1;
 }
+
+.toogle-menu {
+  display: none;
+}
+@media screen and (max-width: 850px) {
+  .toogle-menu {
+    display: flex;
+    font-size: 20px;
+    color: white;
+  }
+  header .nav_list {
+    // display: none;
+    visibility: hidden;
+  }
+}
