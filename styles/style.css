@@ -234,6 +234,21 @@
   left: 120px;
 }
 
+.sponsor_img {
+  width: 150px;
+  cursor: pointer;
+  transition: transform 0.4s;
+}
+.sponsor_img:hover {
+  transform: scale(1.1);
+}
+.sponsor_container {
+  padding-block: 8px 72px;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   margin: 0;
   padding: 0;
